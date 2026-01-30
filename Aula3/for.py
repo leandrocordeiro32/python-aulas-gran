@@ -30,7 +30,7 @@ print(f"Total de votos para a pessoa candidata 2: {candidato_2}")
 print(f"Total de votos nulos: {votos_nulos}")
 
 print()
-print("Média de 10 números inteiros")
+print("Média de números inteiros")
 print()
 
 soma = 0
