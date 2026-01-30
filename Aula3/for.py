@@ -1,6 +1,12 @@
-for i in range(1, 11):
-    # print("2 x {} = {}".format(i, 2*i))
-    # print("2 x", i, " =", 2*i)
-    print(f"2 x {i} = {2*i}")
 
+
+soma = 0
+numeros = int(input("Informe a quantidade de números a serem informados: "))
+
+for i in range(numeros):
+    numero = int(input(f"Digite o {i+1}º número: "))
+    soma += numero
+
+media = soma / numeros
+print(f"A média dos números é: {media}")
 
