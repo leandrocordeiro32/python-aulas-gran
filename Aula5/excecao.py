@@ -14,6 +14,7 @@ except Exception as erro:
 '''
 
 try:
+    # Código que pode gerar uma exceção
     n1 = int(input("Digite um número inteiro: "))
     n2 = int(input("Digite outro número inteiro: "))
     
@@ -22,9 +23,11 @@ try:
     print(f"O resultado da divisão entre {n1} por {n2} é igual a {resultado}")
 
 except ValueError:
+    # Código para tratar exceção de valor inválido
     print("Digitar apenas números inteiros!")
 
 except ZeroDivisionError:
+    # Código para tratar exceção de divisão por zero
     print("Não é possível dividir um número por zero!")
 
 except Exception as erro:
@@ -33,9 +36,11 @@ except Exception as erro:
 # Outras possibilidades:
 
 else:
+    # Código que será executado se não houver exceções
     print("O programa foi executado corretamente!")
 
 finally:
-    print("Fim")
+    # Código que será executado sempre, com ou sem exceções
+    print("Programa encerrado")
 
 
