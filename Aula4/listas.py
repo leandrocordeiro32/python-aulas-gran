@@ -1,9 +1,11 @@
 numeros = [10, 24, 33, 36, 42, 6, 666]
-# print(numeros[6])
+print(numeros[6])
+
+
 
 carros = ['HB20', 'Kicks', 'Argus', 'Ka', 'Ferrari', 'Jaguar', 'Fusca', 'Omega', 'Uno', 'Brasília', 'LandRover']
 print('Lista de Carros: ', carros)
-# print(len(carros))
+print(len(carros))
 
 carros.append('Kombi')
 print('Adicionando (append) a Kombi na lista de Carros: ',carros)
@@ -21,3 +23,14 @@ print('Adicionando vários carros para exemplificar impressão de lista item a i
 
 for carro in carros:
     print(f'Carro: {carro}')
+
+lista = [1, 2, 3]
+lista.append(4)
+print(f"Adiciona o 4 na lista [1, 2, 3]: {lista}")
+
+lista1 = [5, 6]
+lista += lista1
+print(f"União das listas [1, 2, 3] com a [5, 6]: {lista}")
+
+lista[1] = 4
+print(f"Troca o segundo item da lista [1, 2, 3, 4, 5] por 4: {lista}")
