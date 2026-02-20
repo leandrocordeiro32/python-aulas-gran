@@ -32,4 +32,7 @@ n2 = float(input("Digite outro número qualquer: "))
 operador = input("Informe o sinal de operação matemática (+) (-) (*) (/): ")
 resultado = calcular(n1, n2, operador)
 
-print(f"{n1} {operador} {n2} = {resultado:.2f}")
+if isinstance(resultado, (int, float)):
+    print(f"{n1} {operador} {n2} = {resultado:.2f}")
+else:
+    print(resultado)
