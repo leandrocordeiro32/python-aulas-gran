@@ -56,7 +56,6 @@ carro1.marca = "Honda"
 carro1.modelo = "Civic"
 carro1.ano = 2020
 
-
 print('------------------------------------------')
 carro1.mostrar_informacoes()
 print('------------------------------------------')
