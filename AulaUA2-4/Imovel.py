@@ -18,9 +18,10 @@ class Imovel(ABC):
     def aluguelSugerido(self):
         ...
     
-class ImovelResisdencial(Imovel):
+class ImovelResidencial(Imovel):
     def __init__(self, nome, uf, valor, endereco='', area=''):
         super().__init__(nome, uf, valor, endereco, area)
+        #Imovel.__init__(self, nome, uf, valor, endereco, area)
         self.quartos = 0
         self.piscina = True
         
@@ -55,7 +56,7 @@ class Fazenda(Imovel, ImovelRural):
 
 # imovel.detalhar()
 
-casa = ImovelResisdencial('Casa da Mãe Joana', 'SP', 1000000)
+casa = ImovelResidencial('Casa da Mãe Joana', 'SP', 1000000)
 casa.detalhar()
 print(casa.aluguelSugerido())
 
